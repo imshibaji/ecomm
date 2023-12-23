@@ -11,4 +11,21 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'EmpApp';
+  counter = 0;
+
+  changeTitle(){
+    this.title = "Changed Title";
+  }
+
+  increment(){
+    this.counter++;
+  }
+
+  decrement(){
+    this.counter--;
+  }
+
+  reset(){
+    this.counter = 0;
+  }
 }
